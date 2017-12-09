@@ -1,0 +1,807 @@
+2017-09-27 12:10:49,834 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-09-27 12:10:51,300 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-09-27 12:10:51,608 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-09-27 12:10:51,613 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = localhost,127.0.0.1,Jakobs-MacBook-Pro.local
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Jakob/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/hd/bvps2v89195bbjx6yp18klx80000gn/T/
+	java.library.path = /Users/Jakob/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_121-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_121
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.121-b13
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final
+	jboss.host.name = jakobs-macbook-pro
+	jboss.http.port = 8080
+	jboss.management.http.port = 9990
+	jboss.modules.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jakobs-macbook-pro
+	jboss.qualified.host.name = jakobs-macbook-pro.local
+	jboss.server.base.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = jakobs-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.12.6
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar -mp /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final -Djboss.server.base.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = AT
+	user.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/bin
+	user.home = /Users/Jakob
+	user.language = de
+	user.name = Jakob
+	user.timezone = Europe/Vienna
+2017-09-27 12:10:51,615 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms128m -Xmx512m -Dhttp.nonProxyHosts=localhost,127.0.0.1,Jakobs-MacBook-Pro.local -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.management.http.port=9990 -Djboss.http.port=8080 -Dorg.jboss.boot.log.file=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties 
+2017-09-27 12:10:56,700 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-09-27 12:10:56,779 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.4.0.Final
+2017-09-27 12:10:56,803 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.4.0.Final
+2017-09-27 12:10:56,933 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 41) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-09-27 12:10:56,943 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 40) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-09-27 12:10:57,107 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 60) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-09-27 12:10:57,149 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 59) WFLYSEC0002: Activating Security Subsystem
+2017-09-27 12:10:57,155 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 52) WFLYNAM0001: Activating Naming Subsystem
+2017-09-27 12:10:57,164 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 62) WFLYWS0002: Activating WebServices Extension
+2017-09-27 12:10:57,182 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.21.Final
+2017-09-27 12:10:57,145 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-09-27 12:10:57,208 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 42) WFLYIIOP0001: Activating IIOP Subsystem
+2017-09-27 12:10:57,281 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2017-09-27 12:10:57,298 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-09-27 12:10:57,334 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-09-27 12:10:57,384 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-09-27 12:10:57,420 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-09-27 12:10:57,391 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-09-27 12:10:57,449 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-09-27 12:10:57,686 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0014: Creating file handler for path '/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-09-27 12:10:57,821 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-09-27 12:10:57,822 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-09-27 12:10:57,829 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2017-09-27 12:10:57,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2017-09-27 12:10:58,085 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-09-27 12:10:58,570 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-09-27 12:10:58,995 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-09-27 12:10:59,034 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments
+2017-09-27 12:10:59,045 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2017-09-27 12:10:59,070 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2017-09-27 12:10:59,239 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-4) WFLYIIOP0009: CORBA ORB Service started
+2017-09-27 12:10:59,826 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/journal,bindingsDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/bindings,largeMessagesDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/largemessages,pagingDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/paging)
+2017-09-27 12:11:00,301 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-09-27 12:11:00,342 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 69) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,342 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,342 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 70) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,346 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,346 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 70) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,346 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 69) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:11:00,382 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221013: Using NIO Journal
+2017-09-27 12:11:00,753 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_cs.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,753 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_de_DE.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,754 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_es.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,754 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_fr.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,754 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_hu.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,755 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_it.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,755 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ja_JP.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,757 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ko_KR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,759 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_pl.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,760 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_pt_BR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,761 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ru.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,761 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_zh_CN.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,761 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_zh_TW.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-09-27 12:11:00,779 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-09-27 12:11:01,021 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2017-09-27 12:11:01,106 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2017-09-27 12:11:01,146 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2017-09-27 12:11:01,192 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2017-09-27 12:11:01,317 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-09-27 12:11:01,655 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0004: Deploying JDBC-compliant driver class org.apache.derby.jdbc.ClientDriver (version 10.10)
+2017-09-27 12:11:01,703 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = derbyclient.jar
+2017-09-27 12:11:01,741 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/SampleDbDS]
+2017-09-27 12:11:02,267 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-09-27 12:11:02,267 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-09-27 12:11:02,270 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-09-27 12:11:02,270 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-09-27 12:11:02,525 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221007: Server is now live
+2017-09-27 12:11:02,525 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 64) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [nodeID=c413f8e2-a286-11e7-945d-e73f4eb93610] 
+2017-09-27 12:11:02,574 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 69) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-09-27 12:11:02,608 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 70) AMQ221003: trying to deploy queue jms.queue.DLQ
+2017-09-27 12:11:02,627 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 64) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2017-09-27 12:11:02,628 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 65) AMQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2017-09-27 12:11:02,839 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0007: Registered connection factory java:/JmsXA
+2017-09-27 12:11:03,022 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-6) Resource adaptor started
+2017-09-27 12:11:03,024 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-6) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2017-09-27 12:11:03,028 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2017-09-27 12:11:03,029 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-09-27 12:11:03,091 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "derbyclient.jar" (runtime-name : "derbyclient.jar")
+2017-09-27 12:11:03,421 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-09-27 12:11:03,422 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-09-27 12:11:03,422 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 15453ms - Started 414 of 664 services (417 services are lazy, passive or on-demand)
+2017-09-27 12:17:19,879 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found teams_students_01-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called teams_students_01-1.0-SNAPSHOT.war.dodeploy
+2017-09-27 12:17:19,933 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:17:20,347 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:17:20,570 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 73) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:17:20,640 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 73) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:17:20,943 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:17:21,219 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 73) HHH000412: Hibernate Core {5.0.10.Final}
+2017-09-27 12:17:21,222 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 73) HHH000206: hibernate.properties not found
+2017-09-27 12:17:21,225 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 73) HHH000021: Bytecode provider name : javassist
+2017-09-27 12:17:21,423 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.2.4.Final
+2017-09-27 12:17:21,513 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 73) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-27 12:17:22,301 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:17:22,310 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:17:22,313 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:17:23,192 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 73) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:17:23,195 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 73) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:17:23,478 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 2.3.5 (Final)
+2017-09-27 12:17:24,612 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 74) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:17:24,955 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 73) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:17:25,868 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 74) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:17:25,936 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 74) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:17:27,572 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 74) Envers integration enabled? : true
+2017-09-27 12:17:31,063 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 74) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:17:31,068 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 74) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:17:31,156 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [alter table Student drop constraint FK57n1xxq2cpcfgkkj960cnen9n]
+2017-09-27 12:17:31,165 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [alter table Student_Task drop constraint FKa1eax6xr2a484n6pqkw72ode7]
+2017-09-27 12:17:31,173 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [alter table Student_Task drop constraint FK9wpx24e94lrnexa1rhsudl7fj]
+2017-09-27 12:17:31,202 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [drop table Student]
+2017-09-27 12:17:31,242 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [drop table Student_Task]
+2017-09-27 12:17:31,284 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [drop table Task]
+2017-09-27 12:17:31,314 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [drop table Team]
+2017-09-27 12:17:31,382 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 74) Unable to execute JPA schema generation drop command [drop sequence hibernate_sequence restrict]
+2017-09-27 12:17:39,526 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 75) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:17:39,528 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 75) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:17:39,882 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0021: Registered web context: /teams_students_01-1.0-SNAPSHOT
+2017-09-27 12:17:40,090 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name : "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:18:10,206 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0022: Unregistered web context: /teams_students_01-1.0-SNAPSHOT
+2017-09-27 12:18:10,247 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:18:10,251 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:18:10,266 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:18:10,275 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 84ms
+2017-09-27 12:18:10,276 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:18:10,360 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:18:10,447 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:18:10,449 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 81) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:18:10,495 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:18:10,508 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:18:10,509 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:18:10,510 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:18:10,596 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 81) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:18:10,597 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 81) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:18:10,608 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 81) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:18:10,621 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:18:10,623 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 81) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:18:10,624 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 81) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:18:10,657 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 81) Envers integration enabled? : true
+2017-09-27 12:18:10,720 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 81) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:18:10,720 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 81) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:18:11,317 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 82) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:18:11,318 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 82) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:18:11,321 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: /server
+2017-09-27 12:18:11,342 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:19:35,186 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:19:35,221 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:19:35,223 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:19:35,235 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:19:35,236 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 52ms
+2017-09-27 12:19:35,262 WARN  [org.jboss.as.controller] (management-handler-thread - 10) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2017-09-27 12:19:35,265 INFO  [org.jboss.as.server] (management-handler-thread - 10) WFLYSRV0009: Undeployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:19:36,539 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found teams_students_01-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called teams_students_01-1.0-SNAPSHOT.war.dodeploy
+2017-09-27 12:19:36,562 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:19:36,580 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:19:36,632 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:19:36,633 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 90) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:19:36,666 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:19:36,699 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:19:36,703 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:19:36,712 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:19:36,941 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:19:36,943 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:19:36,986 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:19:37,026 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:19:37,032 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 90) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:19:37,035 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 90) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:19:37,158 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 90) Envers integration enabled? : true
+2017-09-27 12:19:37,285 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 90) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:19:37,285 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 90) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:19:39,587 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 87) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:19:39,593 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 87) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:19:39,620 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0021: Registered web context: /server
+2017-09-27 12:19:39,659 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name : "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:20:39,773 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:20:39,818 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:39,821 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:39,849 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 94) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:20:39,867 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 96ms
+2017-09-27 12:20:39,868 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:20:39,887 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:20:39,931 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:39,932 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 94) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:20:39,940 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:20:39,951 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:20:39,951 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:20:39,951 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:20:40,021 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:40,053 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:40,077 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 94) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:20:40,096 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:40,097 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 94) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:40,098 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 94) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:40,135 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 94) Envers integration enabled? : true
+2017-09-27 12:20:40,299 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 94) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:40,300 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 94) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:40,780 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 91) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:20:40,780 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 91) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:20:40,784 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0021: Registered web context: /server
+2017-09-27 12:20:40,801 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:20:45,823 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 91) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:20:45,846 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:45,848 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:45,856 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 34ms
+2017-09-27 12:20:45,857 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 97) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:20:45,857 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:20:45,863 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:20:45,873 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:45,873 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 97) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:20:45,876 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:20:45,880 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:20:45,880 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:20:45,881 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:20:45,965 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 97) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:45,966 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 97) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:46,022 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 97) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:20:46,054 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 97) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:46,060 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 97) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:46,062 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 97) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:46,096 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 97) Envers integration enabled? : true
+2017-09-27 12:20:46,238 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 97) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:46,238 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 97) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:46,791 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 96) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:20:46,792 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 96) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:20:46,795 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0021: Registered web context: /server
+2017-09-27 12:20:46,814 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:20:51,872 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 96) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:20:51,936 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:51,950 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:51,978 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 109ms
+2017-09-27 12:20:51,979 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:20:51,990 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:20:51,991 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 94) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:20:52,010 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 94) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:52,010 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 94) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:20:52,021 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:20:52,036 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:20:52,037 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:20:52,037 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:20:52,165 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:52,166 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:20:52,182 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 92) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:20:52,186 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 92) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:52,188 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 92) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:52,225 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 92) Envers integration enabled? : true
+2017-09-27 12:20:52,227 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 94) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:20:52,366 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 92) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:20:52,366 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 92) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:20:54,023 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 94) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:20:54,030 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 94) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:20:54,044 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 94) WFLYUT0021: Registered web context: /server
+2017-09-27 12:20:54,094 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:21:39,192 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 99) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:21:39,243 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 105) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:21:39,258 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 106) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:21:39,278 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 89ms
+2017-09-27 12:21:39,280 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:21:39,281 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 106) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:21:39,288 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:21:39,315 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 106) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:21:39,316 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 106) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:21:39,346 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:21:39,352 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-09-27 12:21:39,352 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:21:39,353 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:21:39,353 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:21:39,546 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 106) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:21:39,549 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 106) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:21:39,579 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 106) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:21:39,617 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 106) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:21:39,618 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 106) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:21:39,618 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 106) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:21:39,636 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 106) Envers integration enabled? : true
+2017-09-27 12:21:39,793 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 106) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:21:39,795 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 106) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:21:40,740 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 106) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:21:40,741 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 106) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:21:40,771 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 106) WFLYUT0021: Registered web context: /server
+2017-09-27 12:21:40,818 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:25:26,173 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 107) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:25:26,184 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:26,186 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:26,199 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 27ms
+2017-09-27 12:25:26,201 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:25:26,201 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 113) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:25:26,221 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:25:26,231 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:26,232 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 113) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:25:26,235 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:25:26,247 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-09-27 12:25:26,248 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:25:26,248 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:25:26,249 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:25:26,340 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 113) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:25:26,340 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 113) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:25:26,347 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 113) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:25:26,356 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:26,357 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 113) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:25:26,357 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 113) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:25:26,464 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 113) Envers integration enabled? : true
+2017-09-27 12:25:26,499 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 113) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:25:26,499 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 113) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:25:26,917 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 109) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:25:26,918 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 109) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:25:26,921 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 109) WFLYUT0021: Registered web context: /server
+2017-09-27 12:25:26,952 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:25:41,985 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 109) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:25:41,998 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:42,002 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:42,008 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 23ms
+2017-09-27 12:25:42,010 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 114) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:25:42,010 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:25:42,018 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:25:42,026 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 114) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:42,027 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 114) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:25:42,031 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:25:42,034 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-09-27 12:25:42,034 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:25:42,034 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:25:42,034 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:25:42,085 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 114) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:25:42,086 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 114) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:25:42,088 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 113) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:25:42,091 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 113) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:25:42,091 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 113) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:25:42,092 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 114) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:25:42,106 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 113) Envers integration enabled? : true
+2017-09-27 12:25:42,142 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 113) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:25:42,144 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 113) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:25:42,504 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 113) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:25:42,504 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 113) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:25:42,507 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0021: Registered web context: /server
+2017-09-27 12:25:42,533 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:26:02,578 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:26:02,590 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 119) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:02,593 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 119) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:02,600 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 119) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:26:02,602 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 25ms
+2017-09-27 12:26:02,602 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:26:02,609 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:26:02,619 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 119) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:02,620 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 119) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:26:02,623 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:26:02,627 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-09-27 12:26:02,628 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:26:02,628 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:26:02,628 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:26:02,681 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 119) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:26:02,682 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 119) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:26:02,687 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 119) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:26:02,692 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 119) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:02,693 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 119) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:26:02,693 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 119) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:26:02,706 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 119) Envers integration enabled? : true
+2017-09-27 12:26:02,739 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 119) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:26:02,739 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 119) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:26:03,017 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 121) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:26:03,018 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 121) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:26:03,020 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 121) WFLYUT0021: Registered web context: /server
+2017-09-27 12:26:03,037 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-09-27 12:26:38,107 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 122) WFLYUT0022: Unregistered web context: /server
+2017-09-27 12:26:38,121 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:38,124 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:38,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 24ms
+2017-09-27 12:26:38,131 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-09-27 12:26:38,132 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 127) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-27 12:26:38,138 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-09-27 12:26:38,152 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:38,153 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 127) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-09-27 12:26:38,157 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-09-27 12:26:38,173 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-09-27 12:26:38,173 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-09-27 12:26:38,173 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-09-27 12:26:38,174 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-09-27 12:26:38,254 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 127) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:26:38,255 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 127) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-09-27 12:26:38,259 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 127) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-09-27 12:26:38,298 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 127) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-27 12:26:38,300 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 127) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:26:38,303 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 127) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:26:38,352 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 127) Envers integration enabled? : true
+2017-09-27 12:26:38,461 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 127) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-09-27 12:26:38,461 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 127) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-09-27 12:26:38,928 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 127) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-09-27 12:26:38,931 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 127) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-09-27 12:26:38,944 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 127) WFLYUT0021: Registered web context: /server
+2017-09-27 12:26:38,958 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"

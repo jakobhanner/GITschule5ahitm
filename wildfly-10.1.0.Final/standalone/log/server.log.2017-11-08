@@ -1,0 +1,348 @@
+2017-11-08 11:45:09,738 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-11-08 11:45:23,419 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-11-08 11:45:23,933 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-11-08 11:45:23,948 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = localhost,127.0.0.1,Jakobs-MacBook-Pro.local
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Jakob/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/hd/bvps2v89195bbjx6yp18klx80000gn/T/
+	java.library.path = /Users/Jakob/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_121-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_121
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.121-b13
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final
+	jboss.host.name = jakobs-macbook-pro
+	jboss.http.port = 8080
+	jboss.management.http.port = 9990
+	jboss.modules.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jakobs-macbook-pro
+	jboss.qualified.host.name = jakobs-macbook-pro.local
+	jboss.server.base.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = jakobs-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.13
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar -mp /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final -Djboss.server.base.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = AT
+	user.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/bin
+	user.home = /Users/Jakob
+	user.language = de
+	user.language.format = en
+	user.name = Jakob
+	user.timezone = Europe/Vienna
+2017-11-08 11:45:23,950 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -Xms128m -Xmx512m -Dhttp.nonProxyHosts=localhost,127.0.0.1,Jakobs-MacBook-Pro.local -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.management.http.port=9990 -Djboss.http.port=8080 -Dorg.jboss.boot.log.file=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties 
+2017-11-08 11:47:06,114 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment fileServer-1.0-SNAPSHOT.war
+2017-11-08 11:47:06,146 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment teams_students_01-1.0-SNAPSHOT.war
+2017-11-08 11:47:06,167 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found teams_students_01-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called teams_students_01-1.0-SNAPSHOT.war.dodeploy
+2017-11-08 11:47:06,168 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fileServer-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called fileServer-1.0-SNAPSHOT.war.dodeploy
+2017-11-08 11:47:06,469 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-11-08 11:47:06,548 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.4.0.Final
+2017-11-08 11:47:06,575 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.4.0.Final
+2017-11-08 11:47:06,726 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.21.Final
+2017-11-08 11:47:07,196 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 69) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-11-08 11:47:07,228 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 68) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-11-08 11:47:07,243 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 80) WFLYNAM0001: Activating Naming Subsystem
+2017-11-08 11:47:07,268 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 70) WFLYIIOP0001: Activating IIOP Subsystem
+2017-11-08 11:47:07,252 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 88) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-11-08 11:47:07,287 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 90) WFLYWS0002: Activating WebServices Extension
+2017-11-08 11:47:07,288 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 87) WFLYSEC0002: Activating Security Subsystem
+2017-11-08 11:47:07,312 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 76) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-11-08 11:47:07,365 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-11-08 11:47:07,404 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-11-08 11:47:07,422 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2017-11-08 11:47:07,466 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-11-08 11:47:07,628 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 64) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-11-08 11:47:07,639 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-11-08 11:47:07,769 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-11-08 11:47:07,772 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-11-08 11:47:07,772 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-11-08 11:47:08,869 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-11-08 11:47:09,559 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-3) WFLYIIOP0009: CORBA ORB Service started
+2017-11-08 11:47:09,944 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 89) WFLYUT0014: Creating file handler for path '/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-11-08 11:47:09,953 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2017-11-08 11:47:09,955 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2017-11-08 11:47:10,198 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-11-08 11:47:13,791 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2017-11-08 11:47:14,103 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-11-08 11:47:14,125 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2017-11-08 11:47:14,126 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "fileServer-1.0-SNAPSHOT.war" (runtime-name: "fileServer-1.0-SNAPSHOT.war")
+2017-11-08 11:47:14,136 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments
+2017-11-08 11:47:14,381 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/journal,bindingsDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/bindings,largeMessagesDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/largemessages,pagingDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/paging)
+2017-11-08 11:47:15,239 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-11-08 11:47:15,262 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221013: Using NIO Journal
+2017-11-08 11:47:15,284 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 93) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,283 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,284 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 95) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,292 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 95) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,292 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 93) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,292 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 94) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:47:15,979 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_cs.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,980 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_de_DE.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,986 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_es.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,988 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_fr.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,989 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_hu.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,991 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_it.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,993 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ja_JP.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,996 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ko_KR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:15,999 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_pl.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:16,000 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_pt_BR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:16,006 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_ru.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:16,008 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_zh_CN.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:16,009 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry derbyLocale_zh_TW.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:16,215 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2017-11-08 11:47:16,662 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-11-08 11:47:16,845 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2017-11-08 11:47:16,898 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2017-11-08 11:47:16,935 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2017-11-08 11:47:18,792 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-11-08 11:47:18,792 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-11-08 11:47:18,793 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-11-08 11:47:18,792 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-11-08 11:47:19,661 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221007: Server is now live
+2017-11-08 11:47:19,699 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 92) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [nodeID=c413f8e2-a286-11e7-945d-e73f4eb93610] 
+2017-11-08 11:47:19,714 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 95) AMQ221003: trying to deploy queue jms.queue.DLQ
+2017-11-08 11:47:19,891 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 92) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2017-11-08 11:47:19,892 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 94) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-11-08 11:47:19,892 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 93) AMQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2017-11-08 11:47:20,266 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0007: Registered connection factory java:/JmsXA
+2017-11-08 11:47:20,701 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-7) Resource adaptor started
+2017-11-08 11:47:20,705 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-7) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2017-11-08 11:47:20,714 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2017-11-08 11:47:20,718 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-11-08 11:47:50,275 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jaxb-api.jar in /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments/fileServer-1.0-SNAPSHOT.war/WEB-INF/lib/jaxb-impl-2.2.3-1.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:50,276 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry activation.jar in /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments/fileServer-1.0-SNAPSHOT.war/WEB-INF/lib/jaxb-impl-2.2.3-1.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:50,276 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jsr173_1.0_api.jar in /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments/fileServer-1.0-SNAPSHOT.war/WEB-INF/lib/jaxb-impl-2.2.3-1.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:47:50,276 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jaxb1-impl.jar in /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments/fileServer-1.0-SNAPSHOT.war/WEB-INF/lib/jaxb-impl-2.2.3-1.jar  does not point to a valid jar for a Class-Path reference.
+2017-11-08 11:48:02,693 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-11-08 11:48:03,229 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-11-08 11:48:05,943 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0004: Deploying JDBC-compliant driver class org.apache.derby.jdbc.ClientDriver (version 10.10)
+2017-11-08 11:48:06,007 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = derbyclient.jar
+2017-11-08 11:48:06,031 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/SampleDbDS]
+2017-11-08 11:48:07,257 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 100) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-11-08 11:48:07,308 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 100) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-11-08 11:48:07,357 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-11-08 11:48:07,870 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 100) HHH000412: Hibernate Core {5.0.10.Final}
+2017-11-08 11:48:07,881 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 100) HHH000206: hibernate.properties not found
+2017-11-08 11:48:07,896 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 100) HHH000021: Bytecode provider name : javassist
+2017-11-08 11:48:08,375 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 100) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-08 11:48:13,740 WARN  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0013: Deployment deployment "fileServer-1.0-SNAPSHOT.war" contains CDI annotations but no bean archive was not found. (No beans.xml nor class with bean defining annotations)
+2017-11-08 11:48:13,826 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.2.4.Final
+2017-11-08 11:48:14,492 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-11-08 11:48:14,501 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-11-08 11:48:14,504 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-11-08 11:48:14,531 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-11-08 11:48:15,440 INFO  [com.sun.jersey.api.core.PackagesResourceConfig] (ServerService Thread Pool -- 104) Scanning for root resource and provider classes in the packages:
+  net.javatutorial.tutorials.services
+2017-11-08 11:48:15,775 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 100) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:48:15,776 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 100) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-11-08 11:48:16,333 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.3.5 (Final)
+2017-11-08 11:48:16,374 INFO  [com.sun.jersey.server.impl.application.WebApplicationImpl] (ServerService Thread Pool -- 104) Initiating Jersey application, version 'Jersey: 1.8 06/24/2011 12:17 PM'
+2017-11-08 11:48:18,041 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 105) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-11-08 11:48:19,176 SEVERE [com.sun.jersey.server.impl.application.RootResourceUriRules] (ServerService Thread Pool -- 104) The ResourceConfig instance does not contain any root resource classes.
+2017-11-08 11:48:19,178 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 104) MSC000001: Failed to start service jboss.undertow.deployment.default-server.default-host./fileServer: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./fileServer: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:85)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+	at com.sun.jersey.server.impl.application.RootResourceUriRules.<init>(RootResourceUriRules.java:99)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._initiate(WebApplicationImpl.java:1298)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.access$700(WebApplicationImpl.java:169)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:775)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl$13.f(WebApplicationImpl.java:771)
+	at com.sun.jersey.spi.inject.Errors.processWithErrors(Errors.java:193)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:771)
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.initiate(WebApplicationImpl.java:766)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.initiate(ServletContainer.java:488)
+	at com.sun.jersey.spi.container.servlet.ServletContainer$InternalWebComponent.initiate(ServletContainer.java:318)
+	at com.sun.jersey.spi.container.servlet.WebComponent.load(WebComponent.java:609)
+	at com.sun.jersey.spi.container.servlet.WebComponent.init(WebComponent.java:210)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:373)
+	at com.sun.jersey.spi.container.servlet.ServletContainer.init(ServletContainer.java:556)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:250)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:133)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:546)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:517)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:559)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:101)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:82)
+	... 6 more
+
+2017-11-08 11:48:19,314 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 100) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-11-08 11:48:23,199 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 105) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-11-08 11:48:23,261 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 105) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-11-08 11:48:27,364 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 105) Envers integration enabled? : true
+2017-11-08 11:48:32,270 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (ServerService Thread Pool -- 105) HHH000397: Using ASTQueryTranslatorFactory
+2017-11-08 11:48:32,902 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 105) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2017-11-08 11:48:32,912 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 105) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @33e5ccce (finder: local module finder @5a42bbf4 (roots: /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules,/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules/system/layers/base))]
+2017-11-08 11:48:33,053 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [alter table Student drop constraint FK57n1xxq2cpcfgkkj960cnen9n]
+2017-11-08 11:48:33,058 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [alter table Student_Task drop constraint FKa1eax6xr2a484n6pqkw72ode7]
+2017-11-08 11:48:33,067 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [alter table Student_Task drop constraint FK9wpx24e94lrnexa1rhsudl7fj]
+2017-11-08 11:48:33,076 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [drop table Student]
+2017-11-08 11:48:33,082 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [drop table Student_Task]
+2017-11-08 11:48:33,091 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [drop table Task]
+2017-11-08 11:48:33,111 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [drop table Team]
+2017-11-08 11:48:33,254 WARN  [org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase] (ServerService Thread Pool -- 105) Unable to execute JPA schema generation drop command [drop sequence hibernate_sequence restrict]
+2017-11-08 11:48:41,845 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 111) RESTEASY002225: Deploying javax.ws.rs.core.Application: class service.ApplicationConfig
+2017-11-08 11:48:41,856 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 111) RESTEASY002200: Adding class resource service.TeamStudentResource from Application class service.ApplicationConfig
+2017-11-08 11:48:42,439 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 111) WFLYUT0021: Registered web context: /server
+2017-11-08 11:48:42,480 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "fileServer-1.0-SNAPSHOT.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.deployment.default-server.default-host./fileServer" => "org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./fileServer: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+    Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes."},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.undertow.deployment.default-server.default-host./fileServer"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2017-11-08 11:48:42,623 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "derbyclient.jar" (runtime-name : "derbyclient.jar")
+2017-11-08 11:48:42,626 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 65) WFLYSRV0010: Deployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name : "teams_students_01-1.0-SNAPSHOT.war")
+2017-11-08 11:48:42,628 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 65) WFLYSRV0010: Deployed "fileServer-1.0-SNAPSHOT.war" (runtime-name : "fileServer-1.0-SNAPSHOT.war")
+2017-11-08 11:48:42,674 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.undertow.deployment.default-server.default-host./fileServer: org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./fileServer: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+
+2017-11-08 11:48:43,480 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-11-08 11:48:43,486 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-11-08 11:48:43,487 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 222010ms - Started 669 of 919 services (2 services failed or missing dependencies, 439 services are lazy, passive or on-demand)
+2017-11-08 11:48:43,773 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment fileServer-1.0-SNAPSHOT.war (runtime-name: fileServer-1.0-SNAPSHOT.war) in 95ms
+2017-11-08 11:48:43,994 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2017-11-08 11:48:43,997 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "fileServer-1.0-SNAPSHOT.war" (runtime-name: "fileServer-1.0-SNAPSHOT.war")
+2017-11-08 11:48:43,998 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.undertow.deployment.default-server.default-host./fileServer
+
+2017-11-08 11:48:47,816 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found fileServer-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called fileServer-1.0-SNAPSHOT.war.dodeploy
+2017-11-08 11:57:34,431 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/CalendarDB]
+2017-11-08 13:57:33,100 INFO  [org.jboss.as.server] (management-handler-thread - 5) WFLYSRV0236: Suspending server with no timeout.
+2017-11-08 13:57:33,211 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2017-11-08 13:57:33,417 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/CalendarDB]
+2017-11-08 13:57:33,471 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 114) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-11-08 13:57:33,508 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 113) WFLYUT0022: Unregistered web context: /server
+2017-11-08 13:57:33,587 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2017-11-08 13:57:33,645 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-11-08 13:57:33,646 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2017-11-08 13:57:33,646 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-11-08 13:57:33,648 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-11-08 13:57:33,653 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 116) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-11-08 13:57:33,690 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 116) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-11-08 13:57:33,690 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/SampleDbDS]
+2017-11-08 13:57:33,696 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = derbyclient.jar
+2017-11-08 13:57:33,700 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 292ms
+2017-11-08 13:57:33,710 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 118) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-11-08 13:57:33,713 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment derbyclient.jar (runtime-name: derbyclient.jar) in 318ms
+2017-11-08 13:57:33,723 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-11-08 13:57:33,724 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-11-08 13:57:33,757 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 113) AMQ151003: resource adaptor stopped
+2017-11-08 13:57:33,831 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 113) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [c413f8e2-a286-11e7-945d-e73f4eb93610] stopped
+2017-11-08 13:57:33,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2017-11-08 13:57:33,836 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-11-08 13:57:33,841 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-11-08 13:57:33,852 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 421ms

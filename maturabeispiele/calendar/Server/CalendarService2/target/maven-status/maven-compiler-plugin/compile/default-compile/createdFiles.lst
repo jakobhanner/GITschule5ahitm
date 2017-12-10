@@ -1,0 +1,11 @@
+Service/GenericResource.class
+Entities/Calendar_.class
+Repositories/AppointmentFacade.class
+Entities/Appointment_.class
+Repositories/CalendarFacade.class
+Service/ApplicationConfig.class
+Filter/CORSFilter.class
+Entities/Calendar.class
+Repositories/AbstractFacade.class
+Entities/AppointmentDto.class
+Entities/Appointment.class

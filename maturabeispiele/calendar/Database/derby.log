@@ -1,0 +1,29 @@
+Mon Dec 04 16:00:36 CET 2017 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Mon Dec 04 16:00:37 CET 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0160-220b-0383-ffff8821aa8f 
+on database directory /Users/Jakob/SEW5AHITM/maturabeispiele/calendar/Database/calendarDB with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.1
+derby.system.home=/Users/Jakob/SEW5AHITM/maturabeispiele/calendar/Database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Dec 04 16:06:37 CET 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance 09324032-0160-220b-0383-ffff8821aa8f 
+on database directory /Users/Jakob/SEW5AHITM/maturabeispiele/calendar/Database/sample with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.13.1
+derby.system.home=/Users/Jakob/SEW5AHITM/maturabeispiele/calendar/Database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Dec 05 14:06:28 CET 2017: Shutting down Derby engine

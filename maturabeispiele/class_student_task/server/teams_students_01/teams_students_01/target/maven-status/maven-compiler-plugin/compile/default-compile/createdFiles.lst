@@ -1,0 +1,12 @@
+repository/AbstractFacade.class
+repository/TeamFacade.class
+service/ApplicationConfig.class
+repository/TaskFacade.class
+entity/Task_.class
+entity/Team.class
+entity/Task.class
+service/TeamStudentResource.class
+entity/Student_.class
+repository/StudentFacade.class
+entity/Team_.class
+entity/Student.class

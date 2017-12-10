@@ -1,0 +1,7 @@
+at/htl/entities/Calendar.class
+at/htl/calendarservice/AppointmentRepository.class
+at/htl/entities/Calendar_.class
+at/htl/entities/Appointment_.class
+at/htl/persistence/ApiResource.class
+at/htl/entities/Appointment.class
+at/htl/calendarservice/AbstractFacade.class

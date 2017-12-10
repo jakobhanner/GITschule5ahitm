@@ -1,0 +1,24 @@
+2017-09-28 08:01:22,024 INFO  [org.jboss.as.server] (management-handler-thread - 20) WFLYSRV0236: Suspending server with no timeout.
+2017-09-28 08:01:22,040 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2017-09-28 08:01:22,098 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 128) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-09-28 08:01:22,102 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 133) WFLYUT0022: Unregistered web context: /server
+2017-09-28 08:01:22,132 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2017-09-28 08:01:22,132 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-09-28 08:01:22,133 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-09-28 08:01:22,133 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-8) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2017-09-28 08:01:22,134 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 135) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-28 08:01:22,147 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 135) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-09-28 08:01:22,149 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/SampleDbDS]
+2017-09-28 08:01:22,149 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-09-28 08:01:22,156 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 132) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-09-28 08:01:22,161 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = derbyclient.jar
+2017-09-28 08:01:22,173 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment derbyclient.jar (runtime-name: derbyclient.jar) in 104ms
+2017-09-28 08:01:22,184 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-09-28 08:01:22,184 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 109ms
+2017-09-28 08:01:22,186 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-09-28 08:01:22,197 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 134) AMQ151003: resource adaptor stopped
+2017-09-28 08:01:22,235 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 134) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [c413f8e2-a286-11e7-945d-e73f4eb93610] stopped
+2017-09-28 08:01:22,236 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2017-09-28 08:01:22,237 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-09-28 08:01:22,238 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-09-28 08:01:22,246 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 165ms

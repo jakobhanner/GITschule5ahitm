@@ -1,0 +1,911 @@
+2017-10-24 11:33:43,187 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-10-24 11:34:00,994 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-10-24 11:34:01,918 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-10-24 11:34:01,931 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.lwawt.macosx.LWCToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	gopherProxySet = false
+	http.nonProxyHosts = localhost,127.0.0.1,Luiss-iPhone
+	java.awt.graphicsenv = sun.awt.CGraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.lwawt.macosx.CPrinterJob
+	java.class.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed
+	java.ext.dirs = /Users/Jakob/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+	java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre
+	java.io.tmpdir = /var/folders/hd/bvps2v89195bbjx6yp18klx80000gn/T/
+	java.library.path = /Users/Jakob/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_121-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_121
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.121-b13
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final
+	jboss.host.name = luiss-iphone
+	jboss.http.port = 8080
+	jboss.management.http.port = 9990
+	jboss.modules.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = luiss-iphone
+	jboss.qualified.host.name = luiss-iphone
+	jboss.server.base.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone
+	jboss.server.config.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data
+	jboss.server.deploy.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/content
+	jboss.server.log.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log
+	jboss.server.name = luiss-iphone
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules
+	org.jboss.boot.log.file = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.13
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.class.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/jboss-modules.jar -mp /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final -Djboss.server.base.dir=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone -c standalone-full.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = AT
+	user.dir = /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/bin
+	user.home = /Users/Jakob
+	user.language = de
+	user.language.format = en
+	user.name = Jakob
+	user.timezone = Europe/Vienna
+2017-10-24 11:34:01,934 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms128m -Xmx512m -Dhttp.nonProxyHosts=localhost,127.0.0.1,Luiss-iPhone -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Djboss.management.http.port=9990 -Djboss.http.port=8080 -Dorg.jboss.boot.log.file=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/configuration/logging.properties 
+2017-10-24 11:34:53,080 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found teams_students_01-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called teams_students_01-1.0-SNAPSHOT.war.dodeploy
+2017-10-24 11:34:53,171 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-10-24 11:34:53,222 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.4.0.Final
+2017-10-24 11:34:53,240 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.4.0.Final
+2017-10-24 11:34:53,362 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.21.Final
+2017-10-24 11:34:53,410 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 58) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2017-10-24 11:34:53,413 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 59) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-10-24 11:34:53,433 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 60) WFLYIIOP0001: Activating IIOP Subsystem
+2017-10-24 11:34:53,655 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 70) WFLYNAM0001: Activating Naming Subsystem
+2017-10-24 11:34:53,653 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 66) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-10-24 11:34:53,682 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 78) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-10-24 11:34:53,698 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 80) WFLYWS0002: Activating WebServices Extension
+2017-10-24 11:34:53,698 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 77) WFLYSEC0002: Activating Security Subsystem
+2017-10-24 11:34:53,711 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-10-24 11:34:53,729 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2017-10-24 11:34:53,731 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-10-24 11:34:53,748 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-10-24 11:34:53,995 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-10-24 11:34:53,999 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 54) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-10-24 11:34:54,002 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-10-24 11:34:54,208 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2017-10-24 11:34:54,208 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2017-10-24 11:34:54,738 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 79) WFLYUT0014: Creating file handler for path '/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-10-24 11:34:54,754 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2017-10-24 11:34:54,757 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2017-10-24 11:34:54,941 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-10-24 11:34:55,829 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2017-10-24 11:34:56,082 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:34:56,091 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2017-10-24 11:34:56,119 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/deployments
+2017-10-24 11:34:56,151 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/journal,bindingsDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/bindings,largeMessagesDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/largemessages,pagingDirectory=/Users/Jakob/SEW5AHITM/wildfly-10.1.0.Final/standalone/data/activemq/paging)
+2017-10-24 11:34:56,221 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221013: Using NIO Journal
+2017-10-24 11:34:56,309 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-10-24 11:34:56,371 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 89) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:56,372 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 89) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:56,373 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:56,373 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 87) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:56,374 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:56,374 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 87) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:34:57,204 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2017-10-24 11:34:57,207 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_cs.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,208 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_de_DE.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,208 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_es.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,208 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_fr.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,209 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_hu.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,209 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_it.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,215 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_ja_JP.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,219 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_ko_KR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,221 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_pl.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,222 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_pt_BR.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,222 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_ru.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,223 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_zh_CN.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,223 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry derbyLocale_zh_TW.jar in /content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2017-10-24 11:34:57,362 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-10-24 11:34:57,529 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2017-10-24 11:34:57,554 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2017-10-24 11:34:57,559 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2017-10-24 11:34:57,701 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-4) WFLYIIOP0009: CORBA ORB Service started
+2017-10-24 11:34:58,275 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-10-24 11:34:58,275 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-10-24 11:34:58,275 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2017-10-24 11:34:58,274 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2017-10-24 11:34:58,621 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221007: Server is now live
+2017-10-24 11:34:58,622 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [nodeID=c413f8e2-a286-11e7-945d-e73f4eb93610] 
+2017-10-24 11:34:58,634 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 87) AMQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2017-10-24 11:34:58,676 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 82) AMQ221003: trying to deploy queue jms.queue.DLQ
+2017-10-24 11:34:58,721 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 86) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-10-24 11:34:58,724 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 90) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2017-10-24 11:34:59,573 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-10-24 11:34:59,667 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) WFLYJCA0007: Registered connection factory java:/JmsXA
+2017-10-24 11:34:59,804 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-3) Resource adaptor started
+2017-10-24 11:34:59,808 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-3) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2017-10-24 11:34:59,834 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2017-10-24 11:34:59,834 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-10-24 11:35:04,991 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-10-24 11:35:05,173 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-10-24 11:35:06,157 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0004: Deploying JDBC-compliant driver class org.apache.derby.jdbc.ClientDriver (version 10.10)
+2017-10-24 11:35:06,187 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = derbyclient.jar
+2017-10-24 11:35:06,193 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/SampleDbDS]
+2017-10-24 11:35:06,464 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 90) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:06,512 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 90) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-10-24 11:35:06,590 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-10-24 11:35:06,823 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 90) HHH000412: Hibernate Core {5.0.10.Final}
+2017-10-24 11:35:06,829 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 90) HHH000206: hibernate.properties not found
+2017-10-24 11:35:06,837 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 90) HHH000021: Bytecode provider name : javassist
+2017-10-24 11:35:07,003 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 90) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-24 11:35:08,122 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.2.4.Final
+2017-10-24 11:35:08,342 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-10-24 11:35:08,343 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-10-24 11:35:08,343 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-10-24 11:35:08,343 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-7) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-10-24 11:35:08,883 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:08,886 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 90) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:09,079 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.3.5 (Final)
+2017-10-24 11:35:09,581 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:09,830 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 90) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-10-24 11:35:10,056 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 86) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1320)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:496)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:617)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:589)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:590)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:429)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:747)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:66)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 36 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 44 more
+
+2017-10-24 11:35:10,077 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (ServerService Thread Pool -- 86) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/SampleDbDS
+2017-10-24 11:35:10,084 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 86) MSC000001: Failed to start service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	... 19 more
+
+2017-10-24 11:35:10,094 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "teams_students_01-1.0-SNAPSHOT.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2017-10-24 11:35:10,179 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "derbyclient.jar" (runtime-name : "derbyclient.jar")
+2017-10-24 11:35:10,180 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 55) WFLYSRV0010: Deployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name : "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:35:10,184 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+2017-10-24 11:35:10,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-10-24 11:35:10,557 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-10-24 11:35:10,557 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 98551ms - Started 557 of 834 services (35 services failed or missing dependencies, 428 services are lazy, passive or on-demand)
+2017-10-24 11:35:10,634 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:10,688 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-10-24 11:35:10,692 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 75ms
+2017-10-24 11:35:10,861 WARN  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0357: Notification of type deployment-undeployed is not described for the resource at the address []
+2017-10-24 11:35:10,866 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0009: Undeployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:35:10,873 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldStartService, WFLYCTL0208: ... and 12 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator, WFLYCTL0208: ... and 11 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.VIEW."repository.TaskFacade".LOCAL (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.VIEW."service.TeamStudentResource".LOCAL (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInterceptorBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START, WFLYCTL0208: ... and 6 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START, WFLYCTL0208: ... and 2 more ] 
+      service jboss.naming.context.java.app."teams_students_01-1.0-SNAPSHOT".env (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".BeanManager (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultContextService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultDataSource (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultJMSConnectionFactory (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".UserTransaction (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.StudentFacade".em (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TaskFacade".em (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TeamFacade".em (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents" (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TeamFacade".em, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, WFLYCTL0208: ... and 8 more ] 
+      service jboss.undertow.deployment.default-server.default-host./server (missing) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./server.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./server.session (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."teams_students_01-1.0-SNAPSHOT.war".undertow (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents"
+
+2017-10-24 11:35:15,271 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found teams_students_01-1.0-SNAPSHOT.war in deployment directory. To trigger deployment create a file called teams_students_01-1.0-SNAPSHOT.war.dodeploy
+2017-10-24 11:35:15,281 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:35:15,441 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-10-24 11:35:15,463 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 42) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:15,464 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 42) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-10-24 11:35:15,490 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-10-24 11:35:15,507 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-10-24 11:35:15,507 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-10-24 11:35:15,508 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-10-24 11:35:15,514 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-10-24 11:35:15,678 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 42) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:15,681 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 42) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:15,691 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-10-24 11:35:15,728 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 42) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:15,732 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 42) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1320)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:496)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:617)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:589)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:590)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:429)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:747)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:66)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 36 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 44 more
+
+2017-10-24 11:35:15,740 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (ServerService Thread Pool -- 42) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/SampleDbDS
+2017-10-24 11:35:15,742 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 42) MSC000001: Failed to start service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	... 19 more
+
+2017-10-24 11:35:15,754 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "teams_students_01-1.0-SNAPSHOT.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2017-10-24 11:35:15,779 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "teams_students_01-1.0-SNAPSHOT.war" (runtime-name : "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:35:15,780 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0185:    Newly corrected services:
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldBootstrapService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldStartService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.VIEW."repository.TaskFacade".LOCAL (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.ejb.non-functional-timerservice (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.VIEW."service.TeamStudentResource".LOCAL (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInterceptorBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.ejb.non-functional-timerservice (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".ee.ComponentRegistry (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService (new available)
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformation (new available)
+      service jboss.naming.context.java.app."teams_students_01-1.0-SNAPSHOT".env (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".BeanManager (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultContextService (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultDataSource (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultJMSConnectionFactory (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultManagedExecutorService (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".UserTransaction (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.StudentFacade".em (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TaskFacade".em (new available)
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TeamFacade".em (new available)
+      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents" (new available)
+      service jboss.undertow.deployment.default-server.default-host./server (new available)
+      service jboss.undertow.deployment.default-server.default-host./server.codec (new available)
+      service jboss.undertow.deployment.default-server.default-host./server.session (new available)
+      service org.wildfly.request-controller.control-point."teams_students_01-1.0-SNAPSHOT.war".undertow (new available)
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+2017-10-24 11:35:47,837 ERROR [org.jboss.as.controller.management-operation] (management-handler-thread - 4) WFLYCTL0013: Operation ("read-attribute") failed - address: ([
+    ("deployment" => "teams_students_01-1.0-SNAPSHOT.war"),
+    ("subsystem" => "ejb3"),
+    ("stateless-session-bean" => "TaskFacade")
+]) - failure description: "WFLYEJB0370: EJB component for address [
+    (\"deployment\" => \"teams_students_01-1.0-SNAPSHOT.war\"),
+    (\"subsystem\" => \"ejb3\"),
+    (\"stateless-session-bean\" => \"TaskFacade\")
+] is in 
+ state DOWN, must be in state UP"
+2017-10-24 11:35:51,042 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 93) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:51,065 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 31ms
+2017-10-24 11:35:51,067 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "teams_students_01-1.0-SNAPSHOT.war" (runtime-name: "teams_students_01-1.0-SNAPSHOT.war")
+2017-10-24 11:35:51,068 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-10-24 11:35:51,200 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for htl_teamsstudents
+2017-10-24 11:35:51,227 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 93) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:51,228 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 93) HHH000204: Processing PersistenceUnitInfo [
+	name: htl_teamsstudents
+	...]
+2017-10-24 11:35:51,265 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment teams_students_01-1.0-SNAPSHOT.war
+2017-10-24 11:35:51,272 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TeamStudentResource' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource!service.TeamStudentResource
+	java:module/TeamStudentResource!service.TeamStudentResource
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamStudentResource
+	java:module/TeamStudentResource
+
+2017-10-24 11:35:51,272 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'StudentFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade!repository.StudentFacade
+	java:module/StudentFacade!repository.StudentFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/StudentFacade
+	java:module/StudentFacade
+
+2017-10-24 11:35:51,273 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TeamFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade!repository.TeamFacade
+	java:module/TeamFacade!repository.TeamFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TeamFacade
+	java:module/TeamFacade
+
+2017-10-24 11:35:51,273 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'TaskFacade' in deployment unit 'deployment "teams_students_01-1.0-SNAPSHOT.war"' are as follows:
+
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade!repository.TaskFacade
+	java:module/TaskFacade!repository.TaskFacade
+	java:global/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:app/teams_students_01-1.0-SNAPSHOT/TaskFacade
+	java:module/TaskFacade
+
+2017-10-24 11:35:51,403 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 93) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:51,404 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 93) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-10-24 11:35:51,443 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 93) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-10-24 11:35:51,482 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 93) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:35:51,486 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 93) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:345)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:352)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:287)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.createConnectionEventListener(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:1320)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreConcurrentLinkedDequeManagedConnectionPool.getConnection(SemaphoreConcurrentLinkedDequeManagedConnectionPool.java:496)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:617)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:589)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:590)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:429)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:747)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:66)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:321)
+	... 36 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused (Connection refused).
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 44 more
+
+2017-10-24 11:35:51,488 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (ServerService Thread Pool -- 93) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/SampleDbDS
+2017-10-24 11:35:51,489 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 93) MSC000001: Failed to start service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:179)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:121)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:667)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:193)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.jboss.as.jpa.hibernate5.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:161)
+	... 7 more
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	... 19 more
+
+2017-10-24 11:35:51,493 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.persistenceunit.\"teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents\""],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+2017-10-24 11:35:51,524 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "teams_students_01-1.0-SNAPSHOT.war" with deployment "teams_students_01-1.0-SNAPSHOT.war"
+2017-10-24 11:35:51,529 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldBootstrapService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldStartService, WFLYCTL0208: ... and 13 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".WeldStartService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./server, WFLYCTL0208: ... and 13 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.VIEW."repository.StudentFacade".LOCAL (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInterceptorBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.ejb.non-functional-timerservice (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.VIEW."repository.TaskFacade".LOCAL (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInterceptorBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.ejb.non-functional-timerservice (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.VIEW."repository.TeamFacade".LOCAL (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInterceptorBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.ejb.non-functional-timerservice (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.VIEW."service.TeamStudentResource".LOCAL (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInterceptorBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.WeldInstantiator] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.ejb.non-functional-timerservice (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldInitialListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService, service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService, service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".ee.ComponentRegistry (unavailable) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."com.sun.faces.config.ConfigureListener".START, WFLYCTL0208: ... and 8 more ] 
+      service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformation (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START, WFLYCTL0208: ... and 2 more ] 
+      service jboss.naming.context.java.app."teams_students_01-1.0-SNAPSHOT".env (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".BeanManager (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultContextService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultDataSource (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultJMSConnectionFactory (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultManagedExecutorService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultManagedScheduledExecutorService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".DefaultManagedThreadFactory (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".EJBContext (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".TimerService (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".TransactionSynchronizationRegistry (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".UserTransaction (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.StudentFacade".em (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.StudentFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TaskFacade".em (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TaskFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TeamFacade".em (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamFacade.START, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".jndiDependencyService] 
+      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents" (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START, service jboss.naming.context.java.module."teams_students_01-1.0-SNAPSHOT"."teams_students_01-1.0-SNAPSHOT".env."repository.TeamFacade".em, service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".component.TeamStudentResource.START, service jboss.undertow.deployment.default-server.default-host./server, WFLYCTL0208: ... and 12 more ] 
+      service jboss.undertow.deployment.default-server.default-host./server (unavailable) dependents: [service jboss.deployment.unit."teams_students_01-1.0-SNAPSHOT.war".deploymentCompleteService] 
+      service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService (unavailable) dependents: [service jboss.undertow.deployment.default-server.default-host./server] 
+      service jboss.undertow.deployment.default-server.default-host./server.codec (unavailable) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service jboss.undertow.deployment.default-server.default-host./server.session (unavailable) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+      service org.wildfly.request-controller.control-point."teams_students_01-1.0-SNAPSHOT.war".undertow (unavailable) dependents: [service jboss.undertow.deployment.default-server.default-host./server.UndertowDeploymentInfoService] 
+WFLYCTL0186:   Services which failed to start:      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents"
+      service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.jboss.msc.service.StartException in service jboss.persistenceunit."teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents": org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+
+2017-10-24 11:52:49,691 INFO  [org.jboss.as.server] (management-handler-thread - 5) WFLYSRV0236: Suspending server with no timeout.
+2017-10-24 11:52:49,701 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2017-10-24 11:52:49,744 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 95) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'teams_students_01-1.0-SNAPSHOT.war#htl_teamsstudents'
+2017-10-24 11:52:49,758 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/SampleDbDS]
+2017-10-24 11:52:49,758 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 96) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2017-10-24 11:52:49,758 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2017-10-24 11:52:49,759 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-10-24 11:52:49,767 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2017-10-24 11:52:49,768 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2017-10-24 11:52:49,780 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-10-24 11:52:49,783 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 98) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-10-24 11:52:49,799 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = derbyclient.jar
+2017-10-24 11:52:49,825 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment derbyclient.jar (runtime-name: derbyclient.jar) in 92ms
+2017-10-24 11:52:49,828 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment teams_students_01-1.0-SNAPSHOT.war (runtime-name: teams_students_01-1.0-SNAPSHOT.war) in 94ms
+2017-10-24 11:52:49,830 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-10-24 11:52:49,832 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-10-24 11:52:49,849 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 97) AMQ151003: resource adaptor stopped
+2017-10-24 11:52:49,888 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 97) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.1.0.wildfly-017 [c413f8e2-a286-11e7-945d-e73f4eb93610] stopped
+2017-10-24 11:52:49,889 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2017-10-24 11:52:49,890 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-10-24 11:52:49,891 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-10-24 11:52:49,898 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 154ms

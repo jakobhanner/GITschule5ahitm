@@ -1,0 +1,6 @@
+"{
+    \"WFLYCTL0080: Failed services\" => {\"jboss.undertow.deployment.default-server.default-host./fileServer\" => \"org.jboss.msc.service.StartException in service jboss.undertow.deployment.default-server.default-host./fileServer: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.
+    Caused by: com.sun.jersey.api.container.ContainerException: The ResourceConfig instance does not contain any root resource classes.\"},
+    \"WFLYCTL0412: Required services that are not installed:\" => [\"jboss.undertow.deployment.default-server.default-host./fileServer\"],
+    \"WFLYCTL0180: Services with missing/unavailable dependencies\" => undefined
+}"

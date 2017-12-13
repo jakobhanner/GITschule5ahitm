@@ -138,3 +138,4 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/java,macos,angular,android
+/maturabeispiele/jsonwebtoken/SimpleTokenServer/target/

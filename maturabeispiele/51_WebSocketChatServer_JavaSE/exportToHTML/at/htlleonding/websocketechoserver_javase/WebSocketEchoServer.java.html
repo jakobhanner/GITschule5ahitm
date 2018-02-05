@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>WebSocketEchoServer.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(128,128,128); font-weight: bold; font-style: italic; }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+.s5 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+WebSocketEchoServer.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">at.htlleonding.websocketechoserver_javase; 
+ 
+</span><span class="s2">/** 
+ * 
+ * </span><span class="s3">@author </span><span class="s2">H. Lackinger 
+ */</span><span class="s1"> 
+</span><span class="s0">import </span><span class="s1">java.io.BufferedReader; 
+</span><span class="s0">import </span><span class="s1">java.io.InputStreamReader; 
+  
+</span><span class="s0">import </span><span class="s1">org.glassfish.tyrus.server.Server; 
+  
+</span><span class="s0">public class </span><span class="s1">WebSocketEchoServer { 
+  
+    </span><span class="s0">public static void </span><span class="s1">main(String[] args) { 
+        runServer(); 
+    }<hr> 
+  
+    </span><span class="s0">public static void </span><span class="s1">runServer() { 
+        Server server = </span><span class="s0">new </span><span class="s1">Server(</span><span class="s4">&quot;localhost&quot;</span><span class="s1">, </span><span class="s5">8025</span><span class="s1">, </span><span class="s4">&quot;/websockets&quot;</span><span class="s1">, <a href="EchoEndpoint.java.html">EchoEndpoint</a>.</span><span class="s0">class</span><span class="s1">); 
+  
+        </span><span class="s0">try </span><span class="s1">{ 
+            server.start(); 
+            BufferedReader reader = </span><span class="s0">new </span><span class="s1">BufferedReader(</span><span class="s0">new </span><span class="s1">InputStreamReader(System.in)); 
+            System.out.print(</span><span class="s4">&quot;Please press a key to stop the server.&quot;</span><span class="s1">); 
+            reader.readLine(); 
+        } </span><span class="s0">catch </span><span class="s1">(Exception e) { 
+            </span><span class="s0">throw new </span><span class="s1">RuntimeException(e); 
+        } </span><span class="s0">finally </span><span class="s1">{ 
+            server.stop(); 
+        } 
+    } 
+} 
+</span></pre>
+</body>
+</html>

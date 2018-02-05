@@ -19,10 +19,14 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.Produces;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
 /**
  * REST Web Service
@@ -49,6 +53,16 @@ public class RESTservices {
     @Path("message")
     public String message() {
         return "Hello REST!";
+    }
+
+    //TEST ECHO Server
+    @POST
+    @Path("test")
+    public String messagePost(String s) {
+        JSONArray arr = new JSONArray(s);
+        JSONObject jObj = arr.getJSONObject(0);
+        String firstInteraction = jObj.getString("methodname");
+        return jObj.toString();
     }
 
     @GET
@@ -121,7 +135,7 @@ public class RESTservices {
         studentRepository.edit(student);
         return student.getFirstName() + " " + student.getLastName() + " wurden hinzugefügt!";
     }
-    
+
     @PUT
     @Path("createS")
     @Produces("application/json")
@@ -139,7 +153,6 @@ public class RESTservices {
         studentRepository.remove(s);
         return s.getFirstName() + " wurden gelöscht!";
     }
-    
 
     @GET
     @Path("findT")
@@ -171,7 +184,7 @@ public class RESTservices {
         teamRepository.remove(teamRepository.find(teamName));
         return "success";
     }
-    
+
     @GET
     @Path("deleteTask/{sID}/{taskName}")
     @Produces("application/text")

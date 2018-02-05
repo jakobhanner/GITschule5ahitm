@@ -139,3 +139,6 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/java,macos,angular,android
 /maturabeispiele/jsonwebtoken/SimpleTokenServer/target/
+/maturabeispiele/class_student_task_exam/server/team_student_task_server/target/
+/testuebung/PhotoStore/target/
+/testuebung/PlayerProjectInteraction/Server/player_project_interaction_server/target/

@@ -1,0 +1,39 @@
+<button (click)="initDB()">Init Database</button>
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Store</th>
+    <th>Brand</th>
+    <th>Camera</th>
+  </tr>
+  <tr>
+    <td>
+      <tr  *ngFor="let co of companies">
+      <div (click)="selectedCo(co)">
+        {{co.companyName}}
+      </div>
+    </tr>
+    </td>
+    <td>
+      <tr *ngFor="let s of stores">
+      <div (click)="selectedS(s)">
+        {{s.location}}
+        </div>
+      </tr>
+    </td>
+    <td>
+      <tr  *ngFor="let b of brands">
+      <div (click)="selectedB(b)">
+        {{b.brandName}}
+        </div>
+
+      </tr>
+    </td>
+    <td *ngFor="let ca of cameras">
+
+    </td>
+  </tr>
+</table>
+
+
+<app-detail></app-detail>

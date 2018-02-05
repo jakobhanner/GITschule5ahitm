@@ -93,7 +93,7 @@ public class RESTservices {
         studentRepository.edit(s5);
         studentRepository.edit(s6);
         studentRepository.edit(s0);
-
+        
         return "DB initialized";
     }
 

@@ -139,3 +139,5 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/java,macos,angular,android
 /maturabeispiele/jsonwebtoken/SimpleTokenServer/target/
+/maturabeispiele/whatsapp/server/WhatsApp/target/
+/maturabeispiele/51_WebSocketChatServer_JavaSE/target/

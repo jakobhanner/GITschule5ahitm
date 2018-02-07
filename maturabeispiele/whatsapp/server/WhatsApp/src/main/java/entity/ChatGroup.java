@@ -8,6 +8,7 @@ package entity;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,27 +23,27 @@ import javax.persistence.NamedQuery;
  */
 @Entity
 @NamedQueries({
-    @NamedQuery(name = "Group.findAll", query = "SELECT g FROM Group g")
+    @NamedQuery(name = "ChatGroup.findAll", query = "SELECT c FROM ChatGroup c")
 })
-public class Group implements Serializable {
+public class ChatGroup {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     String groupname;
     
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.MERGE)
     List<Person> listener = new ArrayList<>();
 
-    public Group() {
+    public ChatGroup() {
     }
 
-    public Group(int id, String groupname) {
+    public ChatGroup(int id, String groupname) {
         this.id = id;
         this.groupname = groupname;
     }
 
-    public Group(String groupname) {
+    public ChatGroup(String groupname) {
         this.groupname = groupname;
     }
 

@@ -5,7 +5,7 @@
  */
 package repository;
 
-import entity.Group;
+import entity.ChatGroup;
 import entity.Person;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class Repository {
     public Repository() {
     }
 
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("person");
+    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("whatsappPU");
     private static EntityManager em = emf.createEntityManager();
 
     public void init() {
@@ -31,8 +31,8 @@ public class Repository {
         Person p3 = new Person("Bernhard", "asdf");
         Person p4 = new Person("Roman", "asdf");
 
-        Group g1 = new Group("RoadAdventure");
-        Group g2 = new Group("Umzug");
+        ChatGroup g1 = new ChatGroup("RoadAdventure");
+        ChatGroup g2 = new ChatGroup("Umzug");
 
         g1.addListener(p1);
         g1.addListener(p2);
@@ -44,16 +44,19 @@ public class Repository {
 
         em.persist(g1);
         em.persist(g2);
+        
+        System.out.println("DB initialized.");
     }
 
-    public List<Group> getGroupsByUsername(String username) {
-        List<Group> allGroups = findAllGroups();
-        List<Group> groups = new ArrayList<>();
+    public List<ChatGroup> getGroupsByUsername(String username) {
+        List<ChatGroup> allGroups = findAllGroups();
+        List<ChatGroup> groups = new ArrayList<>();
 
-        for (Group g:allGroups){
+        for (ChatGroup g:allGroups){
             for(Person p:g.getListener()){
                 if(p.getUsername().equals(username)){
                     groups.add(g);
+                    System.out.println("Username Group: " + g.toString());
                 }
             }
         }
@@ -61,7 +64,7 @@ public class Repository {
         return groups;
     }
 
-    public List<Group> findAllGroups() {
-        return this.em.createNamedQuery("Group.findAll", Group.class).getResultList();
+    public List<ChatGroup> findAllGroups() {
+        return this.em.createNamedQuery("Group.findAll", ChatGroup.class).getResultList();
     }
 }

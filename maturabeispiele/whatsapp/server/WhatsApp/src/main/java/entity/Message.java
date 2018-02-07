@@ -19,7 +19,7 @@ import javax.persistence.ManyToOne;
  * @author Jakob
  */
 @Entity
-public class Message implements Serializable {
+public class Message {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,14 +29,14 @@ public class Message implements Serializable {
     Person sender;
     
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
-    Group receiver;
+    ChatGroup receiver;
     
     String message;
 
     public Message() {
     }
 
-    public Message(int id, Person sender, Group receiver, String message) {
+    public Message(int id, Person sender, ChatGroup receiver, String message) {
         this.id = id;
         this.sender = sender;
         this.receiver = receiver;
@@ -59,11 +59,11 @@ public class Message implements Serializable {
         this.sender = sender;
     }
 
-    public Group getReceiver() {
+    public ChatGroup getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(Group receiver) {
+    public void setReceiver(ChatGroup receiver) {
         this.receiver = receiver;
     }
 

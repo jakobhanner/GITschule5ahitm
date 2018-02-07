@@ -56,12 +56,15 @@ public class WebSocketHandler {
 
         //User meldet sich am Server an
         if (!typ.isEmpty() && !username.isEmpty() && !password.isEmpty() && group.isEmpty() && payload.isEmpty()) {
+            
             registered.put(new Person(username, password), session);
+            session.getAsyncRemote().sendText(username + " wurde angemeldet.");
         }
 
         //User meldet sich am Server ab
         if (!typ.isEmpty() && !username.isEmpty() && password.isEmpty() && group.isEmpty() && payload.isEmpty()) {
             registered.remove(username);
+            session.getAsyncRemote().sendText(username + " wurde abgemeldet.");
         }
 
         //User sendet Message an alle User einer Gruppe

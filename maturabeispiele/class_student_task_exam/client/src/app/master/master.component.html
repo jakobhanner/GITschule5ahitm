@@ -1,0 +1,50 @@
+<table border="1px">
+    <tr>
+      <th>teams</th>
+      <th>student</th>
+      <th>detail</th>
+      <th>tasks</th>
+    </tr>
+    <tr>
+      <td>
+        <div *ngFor="let team of teams, let i=index">
+          <div (click)="selectTeam(team)">
+              <div [style.background-color]="getTeamColor(team)" style="cursor:pointer">{{team.teamId}}</div>
+            </div>
+        </div>
+      </td>
+      <td width="200">
+        <div *ngFor="let student of students">
+          <div (click)="selectStudent(student)">
+              <div [style.background-color]="getStudentColor(student)" style="cursor:pointer">{{student.firstName}} {{student.lastName}}</div>
+          </div>
+        </div>
+      </td>
+      <td>
+          <app-detail [student]="selectedStudent" [style.visibility]="nTsk ? 'visible' : 'hidden'"></app-detail>
+      </td>
+      <td>
+        <div *ngFor="let task of tasks">
+            <td>
+              <tr><div>{{task.description}}</div></tr>
+            </td>
+            <td><button (click)="removeTask(task)">X</button></td>
+        </div>
+        <input type="text" [(ngModel)]="taskDescription" [style.visibility]="nTsk ? 'visible' : 'hidden'" />
+        <button [style.visibility]="nTsk ? 'visible' : 'hidden'" (click)="newTask()" [disabled]="!allowAddTask()">add Task</button>
+      </td>
+      
+    </tr>
+  </table>
+  
+  <br><br>
+  <hr>
+  <div [style.visibility]="nStd ? 'visible' : 'hidden'">
+      <input type="text" placeholder="first name" [(ngModel)]="newStudentFirstName"/>
+      <input type="text" placeholder="last name" [(ngModel)]="newStudentLastName"/>
+      <button (click)="newStudent()" [disabled]="!allowAddStudent()">New Student</button>
+  </div>
+  
+  <button [style.visibility]="update ? 'visible' : 'hidden'" (click)="updateStudent()" style="background-color: darkgreen; border:none; color: white; cursor:pointer; outline: none;">save</button>
+  <button [style.visibility]="update ? 'visible' : 'hidden'" (click)="removeStudent()" style="background-color: darkred; border:none; color: white; cursor:pointer; outline: none;">delete Student</button>
+  

@@ -1,0 +1,37 @@
+<table>
+  <tr>
+    <td>Player</td>
+    <td>Projects</td>
+    <td>Detail</td>
+    <td>Interactions</td>
+  </tr>
+  <tr>
+    <td>
+      <tr *ngFor="let player of players">
+        <div (click)="newSelectedPlayer(player)" [style.background-color]="getColor(player)">
+          {{player.name}}
+        </div>
+      </tr>
+    </td>
+    <td>
+      <tr *ngFor="let project of projects">
+          <div (click)="newSelectedProject(project)" [style.background-color]="getColorP(project)">
+            {{project.projectTitle}}
+          </div>
+        </tr>
+    </td>
+    <td>
+      <app-detail [project]="selectedProject"></app-detail><br>
+      <button (click)="updateProject()">Update Project</button><br>
+      <button (click)="deleteProject()">Delete Project</button>
+    </td>
+    <td>
+      <tr *ngFor="let interaction of interactions">
+        {{interaction.description}}
+      </tr>
+      <tr><input [(ngModel)]="newInteraction"><br>
+        <button (click)="addInteraction()">Add Interaction</button>
+      </tr>
+    </td>
+  </tr>
+</table>
